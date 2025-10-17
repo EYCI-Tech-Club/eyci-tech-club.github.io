@@ -129,3 +129,8 @@ body {
   text-transform: uppercase;
   text-shadow: 2px 2px 5px black;
 }
+
+footer {
+    color: #F4FFFD;
+    text-align: center;
+}
