@@ -161,7 +161,7 @@ footer {
     .item {
         width: 100%;        /* full width on small screens */
         flex: 0 0 100%;
-        padding: 10px;
+        padding: 0px;
         border-radius: 8px;
     }
 
