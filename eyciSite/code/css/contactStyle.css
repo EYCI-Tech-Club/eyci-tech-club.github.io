@@ -14,7 +14,7 @@ body {
     color: #F9DC5C;
 }
 
-/* Navbar Styling (same as other pages) */
+/* Navbar Styling */
 .navbar {
     background-color: #1B263B;
     display: flex;
@@ -35,12 +35,13 @@ body {
     background-color: #415A77;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
     background-color: #778DA9;
     color: #0A1128;
 }
 
-/* Contact Info Styling */
+/* Contact Info Box */
 .contact-info {
     background-color: #1B263B;
     max-width: 700px;
@@ -81,4 +82,48 @@ body {
 
 .contact-info a:hover {
     color: #D4B02A;
+}
+
+/* ------------------------------------------------------ */
+/*                      MOBILE STYLES                     */
+/* ------------------------------------------------------ */
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 8px 0;
+        gap: 8px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .contact-info {
+        width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    .contact-info p,
+    .contact-info li {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .contact-info ul {
+        margin-bottom: 15px;
+    }
 }

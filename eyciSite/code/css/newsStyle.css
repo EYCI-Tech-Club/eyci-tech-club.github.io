@@ -22,6 +22,7 @@ body {
     align-items: center;
     padding: 10px 0;
     gap: 10px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .navbar a {
@@ -47,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 10px; /* small padding on mobile */
 }
 
 /* Each News Item */
@@ -73,4 +75,41 @@ body {
     font-size: 1rem;
     color: #D4B02A;
     opacity: 0.8;
+}
+
+/* ------------------------------------------------------ */
+/*                      MOBILE STYLES                     */
+/* ------------------------------------------------------ */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    .news-container {
+        margin: 20px auto;
+        padding: 0 5px;
+    }
+
+    .news-item {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .news-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .news-item p {
+        font-size: 1rem;
+    }
+
+    .news-item .date {
+        font-size: 0.9rem;
+    }
 }
